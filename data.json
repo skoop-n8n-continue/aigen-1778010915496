@@ -21,7 +21,7 @@
       "timezone": {
         "type": "text",
         "label": "Timezone (e.g. UTC, America/New_York)",
-        "value": "UTC"
+        "value": "ETC"
       },
       "show_clock": {
         "type": "boolean",
@@ -50,7 +50,11 @@
         "label": "Background Image",
         "value": "assets/background_image-1778011008736.png",
         "meta": {
-          "accepted_formats": ["jpg", "png", "webp"],
+          "accepted_formats": [
+            "jpg",
+            "png",
+            "webp"
+          ],
           "path": "assets/"
         }
       }
