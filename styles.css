@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#app-container.loaded {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    max-width: 80%;
+}
+
+.main-text {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: var(--primary-color);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle-text {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.clock-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.time-display {
+    font-size: 6rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.date-display {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.timezone-display {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-text { font-size: 6rem; }
+    .subtitle-text { font-size: 2rem; }
+    .time-display { font-size: 4.5rem; }
+}
+
+@media (max-width: 768px) {
+    .main-text { font-size: 4rem; }
+    .subtitle-text { font-size: 1.5rem; }
+    .time-display { font-size: 3.5rem; }
+    .date-display { font-size: 1.5rem; }
+}

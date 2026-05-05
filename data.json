@@ -1,0 +1,59 @@
+{
+  "app_id": "aigen-1778010915496",
+  "document_version": 1,
+  "sections": {
+    "app_settings": {
+      "background_color": {
+        "type": "color",
+        "label": "Background Color",
+        "value": "#10181f"
+      },
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Color",
+        "value": "#00b7af"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#ffffff"
+      },
+      "timezone": {
+        "type": "text",
+        "label": "Timezone (e.g. UTC, America/New_York)",
+        "value": "UTC"
+      },
+      "show_clock": {
+        "type": "boolean",
+        "label": "Show Clock",
+        "value": true
+      },
+      "show_date": {
+        "type": "boolean",
+        "label": "Show Date",
+        "value": true
+      }
+    },
+    "content": {
+      "main_text": {
+        "type": "text",
+        "label": "Main Headline",
+        "value": "Hello World"
+      },
+      "subtitle_text": {
+        "type": "textarea",
+        "label": "Subtitle",
+        "value": "Welcome to your digital signage display."
+      },
+      "background_image": {
+        "type": "file",
+        "label": "Background Image",
+        "value": "assets/background_image-1778011008736.png",
+        "meta": {
+          "accepted_formats": ["jpg", "png", "webp"],
+          "path": "assets/"
+        }
+      }
+    }
+  }
+}
